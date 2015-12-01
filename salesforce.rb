@@ -23,3 +23,9 @@ firefox_driver.get my_cases_url
 if firefox_driver.current_url.include? 'login'
   salesforce_login firefox_driver
 end
+
+
+# SELECTING VALUES IN XPATH
+# case numbers: $x("//*[contains(@id, 'CASE_NUMBER')]")
+# contact name: $x("//*[contains(@id, 'NAME')]")
+# subject: $x("//*[contains(@id, 'SUBJECT')]")
